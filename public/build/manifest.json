@@ -1,0 +1,65 @@
+{
+  "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.eot": {
+    "file": "assets/MaterialIcons-Regular-BjXOXp5c.eot",
+    "src": "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.eot"
+  },
+  "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.ttf": {
+    "file": "assets/MaterialIcons-Regular-DEUTIz1o.ttf",
+    "src": "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.ttf"
+  },
+  "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.woff": {
+    "file": "assets/MaterialIcons-Regular-FsbMSDLx.woff",
+    "src": "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.woff"
+  },
+  "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.woff2": {
+    "file": "assets/MaterialIcons-Regular-DOtZ65Va.woff2",
+    "src": "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.woff2"
+  },
+  "resources/assets/bank_logo.png": {
+    "file": "assets/bank_logo-CaUNI9UM.png",
+    "src": "resources/assets/bank_logo.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BTse05vx.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/pages/HomeRoute.vue",
+      "resources/js/pages/TestRoute.vue"
+    ],
+    "css": [
+      "assets/app-C5H37P4n.css"
+    ],
+    "assets": [
+      "assets/MaterialIcons-Regular-BjXOXp5c.eot",
+      "assets/MaterialIcons-Regular-DOtZ65Va.woff2",
+      "assets/MaterialIcons-Regular-FsbMSDLx.woff",
+      "assets/MaterialIcons-Regular-DEUTIz1o.ttf"
+    ]
+  },
+  "resources/js/pages/HomeRoute.vue": {
+    "file": "assets/HomeRoute-C4URl73a.js",
+    "name": "HomeRoute",
+    "src": "resources/js/pages/HomeRoute.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/HomeRoute-D71ixziP.css"
+    ],
+    "assets": [
+      "assets/bank_logo-CaUNI9UM.png"
+    ]
+  },
+  "resources/js/pages/TestRoute.vue": {
+    "file": "assets/TestRoute-Do6G4h3K.js",
+    "name": "TestRoute",
+    "src": "resources/js/pages/TestRoute.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  }
+}
