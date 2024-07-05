@@ -1,4 +1,63 @@
 {
+  "_VChip-!~{009}~.js": {
+    "file": "assets/VChip-BuXnO5AC.css",
+    "src": "_VChip-!~{009}~.js"
+  },
+  "_VChip-CFa5e8QY.js": {
+    "file": "assets/VChip-CFa5e8QY.js",
+    "name": "VChip",
+    "imports": [
+      "resources/js/app.js",
+      "_VSheet-BncI0I_P.js"
+    ],
+    "css": [
+      "assets/VChip-BuXnO5AC.css"
+    ]
+  },
+  "_VSheet-!~{008}~.js": {
+    "file": "assets/VSheet-BXUktJLu.css",
+    "src": "_VSheet-!~{008}~.js"
+  },
+  "_VSheet-BncI0I_P.js": {
+    "file": "assets/VSheet-BncI0I_P.js",
+    "name": "VSheet",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/VSheet-BXUktJLu.css"
+    ]
+  },
+  "_VToolbar-!~{00a}~.js": {
+    "file": "assets/VToolbar-CbPtheLN.css",
+    "src": "_VToolbar-!~{00a}~.js"
+  },
+  "_VToolbar-DbZeADUZ.js": {
+    "file": "assets/VToolbar-DbZeADUZ.js",
+    "name": "VToolbar",
+    "imports": [
+      "_VSheet-BncI0I_P.js",
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/VToolbar-CbPtheLN.css"
+    ]
+  },
+  "_scopeId-!~{007}~.js": {
+    "file": "assets/scopeId-YXu6o2hD.css",
+    "src": "_scopeId-!~{007}~.js"
+  },
+  "_scopeId-K8_sfBGm.js": {
+    "file": "assets/scopeId-K8_sfBGm.js",
+    "name": "scopeId",
+    "imports": [
+      "resources/js/app.js",
+      "_VSheet-BncI0I_P.js"
+    ],
+    "css": [
+      "assets/scopeId-YXu6o2hD.css"
+    ]
+  },
   "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.eot": {
     "file": "assets/MaterialIcons-Regular-BjXOXp5c.eot",
     "src": "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.eot"
@@ -15,21 +74,32 @@
     "file": "assets/MaterialIcons-Regular-DOtZ65Va.woff2",
     "src": "node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.woff2"
   },
+  "resources/assets/bank-logo.svg": {
+    "file": "assets/bank-logo-DFHoRPiy.svg",
+    "src": "resources/assets/bank-logo.svg"
+  },
   "resources/assets/bank_logo.png": {
     "file": "assets/bank_logo-CaUNI9UM.png",
     "src": "resources/assets/bank_logo.png"
   },
+  "resources/assets/male-avatar.svg": {
+    "file": "assets/male-avatar-CzR8fkdQ.svg",
+    "src": "resources/assets/male-avatar.svg"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-BTse05vx.js",
+    "file": "assets/app-BBF9j33d.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/pages/HomeRoute.vue",
-      "resources/js/pages/TestRoute.vue"
+      "resources/js/pages/account/Base.vue",
+      "resources/js/pages/account/dashboard/index.vue",
+      "resources/js/pages/account/criteria/index.vue",
+      "resources/js/pages/account/evaluation/index.vue"
     ],
     "css": [
-      "assets/app-C5H37P4n.css"
+      "assets/app-C4G2KD1M.css"
     ],
     "assets": [
       "assets/MaterialIcons-Regular-BjXOXp5c.eot",
@@ -39,24 +109,72 @@
     ]
   },
   "resources/js/pages/HomeRoute.vue": {
-    "file": "assets/HomeRoute-C4URl73a.js",
+    "file": "assets/HomeRoute-DVwFQq0D.js",
     "name": "HomeRoute",
     "src": "resources/js/pages/HomeRoute.vue",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.js"
+      "resources/js/app.js",
+      "_scopeId-K8_sfBGm.js",
+      "_VSheet-BncI0I_P.js",
+      "_VChip-CFa5e8QY.js"
     ],
     "css": [
-      "assets/HomeRoute-D71ixziP.css"
+      "assets/HomeRoute-B8tad5kB.css"
     ],
     "assets": [
       "assets/bank_logo-CaUNI9UM.png"
     ]
   },
-  "resources/js/pages/TestRoute.vue": {
-    "file": "assets/TestRoute-Do6G4h3K.js",
-    "name": "TestRoute",
-    "src": "resources/js/pages/TestRoute.vue",
+  "resources/js/pages/account/Base.vue": {
+    "file": "assets/Base-_XsiUsvc.js",
+    "name": "Base",
+    "src": "resources/js/pages/account/Base.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_scopeId-K8_sfBGm.js",
+      "_VSheet-BncI0I_P.js",
+      "_VToolbar-DbZeADUZ.js"
+    ],
+    "css": [
+      "assets/Base-DlyMUprz.css"
+    ],
+    "assets": [
+      "assets/bank-logo-DFHoRPiy.svg"
+    ]
+  },
+  "resources/js/pages/account/criteria/index.vue": {
+    "file": "assets/index-CEnLDWFM.js",
+    "name": "index",
+    "src": "resources/js/pages/account/criteria/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/account/dashboard/index.vue": {
+    "file": "assets/index-xIcOI4bw.js",
+    "name": "index",
+    "src": "resources/js/pages/account/dashboard/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_VToolbar-DbZeADUZ.js",
+      "_VSheet-BncI0I_P.js",
+      "_VChip-CFa5e8QY.js"
+    ],
+    "css": [
+      "assets/index-C2z6Yf1f.css"
+    ],
+    "assets": [
+      "assets/male-avatar-CzR8fkdQ.svg"
+    ]
+  },
+  "resources/js/pages/account/evaluation/index.vue": {
+    "file": "assets/index-5cmsWXa1.js",
+    "name": "index",
+    "src": "resources/js/pages/account/evaluation/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js"
