@@ -1,0 +1,16 @@
+@use 'vuetify/settings' with (
+    $navigation-drawer-border-thin-width: none
+);
+
+html {
+    overflow-y: hidden;
+}
+
+.adjust-40-width .v-img__img {
+    left: 6px;
+    width: auto !important;
+}
+
+.font-brand {
+    font-family: "Lilita One";
+}
