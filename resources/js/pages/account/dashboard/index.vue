@@ -77,32 +77,16 @@
                             </thead>
 
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asep</td>
-                                    <td class="text-center">0.8</td>
-                                    <td class="text-center">4</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asep</td>
-                                    <td class="text-center">0.8</td>
-                                    <td class="text-center">4</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asep</td>
-                                    <td class="text-center">0.8</td>
-                                    <td class="text-center">4</td>
-                                </tr>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>Asep</td>
-                                    <td class="text-center">0.8</td>
-                                    <td class="text-center">4</td>
+                                <tr
+                                    v-for="(record, index) in records"
+                                    :key="index"
+                                >
+                                    <td>{{ index + 1 }}</td>
+                                    <td>{{ record.name }}</td>
+                                    <td class="text-center">
+                                        {{ record.prefensi_vi }}
+                                    </td>
+                                    <td class="text-center">{{ index + 1 }}</td>
                                 </tr>
                             </tbody>
                         </v-table>
@@ -127,6 +111,16 @@ export default {
             snackbar,
             theme,
         };
+    },
+
+    data: () => ({
+        records: [],
+    }),
+
+    mounted() {
+        this.$http("api/creditor/ranking").then(({ data }) => {
+            this.records = data;
+        });
     },
 };
 </script>

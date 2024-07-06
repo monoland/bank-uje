@@ -12,7 +12,8 @@ Route::get('/user', function (Request $request) {
     ], 200);
 })->middleware('auth:sanctum');
 
-
+Route::get('creditor/ranking', [CreditorController::class, 'ranking'])->middleware('auth:sanctum');
+Route::get('creditor/calculate', [CreditorController::class, 'calculate'])->middleware('auth:sanctum');
 Route::resource('creditor', CreditorController::class)->middleware('auth:sanctum');
 Route::resource('creteria', CreteriaController::class)->middleware('auth:sanctum');
 

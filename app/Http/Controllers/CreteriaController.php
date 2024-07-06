@@ -12,7 +12,7 @@ class CreteriaController extends Controller
      */
     public function index()
     {
-        //
+        return Creteria::paginate(15);
     }
 
     /**
